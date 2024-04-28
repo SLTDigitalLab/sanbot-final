@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.embryo">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/img_3"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/ActivityTheme"
+        tools:targetApi="26">
+        <activity
+            android:name="com.example.embryo.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.embryo.HandShake"
+            android:exported="false" />
+        <activity
+            android:name="com.example.embryo.ReturnActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.embryo.SequenceActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.embryo.SelectActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.embryo.ChoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.embryo.Production5"
+            android:exported="false" />
+        <activity
+            android:name="com.example.embryo.Production4"
+            android:exported="false" />
+        <activity
+            android:name="com.example.embryo.Production3"
+            android:exported="false" />
+        <activity
+            android:name="com.example.embryo.Production2"
+            android:exported="false" />
+        <activity
+            android:name="com.example.embryo.Production1"
+            android:exported="false" />
+        <activity
+            android:name="com.example.embryo.videoActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.embryo.inquiries"
+            android:exported="false" />
+        <activity
+            android:name="com.example.embryo.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.embryo.StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
